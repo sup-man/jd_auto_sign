@@ -1,5 +1,9 @@
 # jd_auto_sign
 
+每天 00:05 自动签到
+
+fork 仓库
+
 浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历后,
 
 按 `F12`
