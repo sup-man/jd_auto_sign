@@ -1,9 +1,9 @@
 name: 京东签到
 
 on:
-#    push:
-#        branches:
-#            - master
+    push:
+        branches:
+            - master
     schedule:
         - cron: '5 16 * * *'
     watch:
@@ -12,7 +12,6 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-
         steps:
             - name: Checkout codes
               uses: actions/checkout@v2
