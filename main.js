@@ -11,7 +11,6 @@ const download = require('download')
 const KEY = process.env.JD_COOKIE
 
 async function downFile () {
-    // const url = 'https://cdn.jsdelivr.net/gh/NobyDa/Script@master/JD-DailyBonus/JD_DailyBonus.js'
     const url = 'https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js'
     await download(url, './')
 }
@@ -35,6 +34,7 @@ async function start() {
   console.log('替换变量完毕')
   // 执行
   await exec("node JD_DailyBonus.js >> result.txt");
+  await exec("cat result.txt");
   console.log('执行完毕')
 }
 
