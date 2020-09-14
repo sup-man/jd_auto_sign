@@ -34,7 +34,7 @@ async function start() {
   console.log('替换变量完毕')
   // 执行
   await exec("node JD_DailyBonus.js >> result.txt");
-  await exec("cat result.txt");
+  console.log(fs.readFileSync('result.txt','utf-8'));
   console.log('执行完毕')
 }
 
