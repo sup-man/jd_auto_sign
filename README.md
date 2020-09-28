@@ -21,3 +21,5 @@ fork 仓库
 仓库的 Action 中开启 Action
 
 触发签到的方法是 star 一下仓库，或者 commit 一次 master
+
+commit就是修改文件重新发布一下。
