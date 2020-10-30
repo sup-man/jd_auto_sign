@@ -23,3 +23,4 @@ fork 仓库
 触发签到的方法是 star 一下仓库，或者 commit 一次 master
 
 commit就是修改文件重新发布一下。
+谢谢
