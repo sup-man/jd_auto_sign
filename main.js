@@ -35,7 +35,12 @@ async function start() {
   // 执行
   await exec("node JD_DailyBonus.js >> result.txt");
   console.log(fs.readFileSync('result.txt','utf-8'));
-  console.log('执行完毕')
+  console.log(result);
+    
+  if (/Cookie失效/.test(result.toString())) {
+        core.setFailed(`Action failed with error !!! Cookie 失效 !!!`);
+  } else {
+        console.log('执行完毕');  
+  }
 }
-
 start()
